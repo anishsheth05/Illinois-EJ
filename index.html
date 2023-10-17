@@ -2,11 +2,65 @@
 <html>
   <head>
     <title>EJ in Illinois: The Data</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      /* Create three equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      </style>
   </head>
   <body>
-    <iframe title="Non-White Population by Percent" aria-label="Map" id="datawrapper-chart-7VzS4" src="https://datawrapper.dwcdn.net/7VzS4/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="780" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-</script>
-    <iframe title="African American Population by Percent" aria-label="Map" id="datawrapper-chart-XsAyi" src="https://datawrapper.dwcdn.net/XsAyi/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="761" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-</script>
+    <div class="row">
+      <div class="column"><iframe title="Non-White Population by Percent" aria-label="Map" id="datawrapper-chart-7VzS4"
+      src="https://datawrapper.dwcdn.net/7VzS4/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="780" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+      </script></div>
+      <div class="column"><iframe align="center" title="African American Population by Percent" aria-label="Map" id="datawrapper-chart-XsAyi" src="https://datawrapper.dwcdn.net/XsAyi/1/" scrolling="no" 
+          frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="761" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+      </script></div>
+      <div class="column"><img align="left" style="width: 0; min-width: 100% !important; border: none;" src="http://www.illinoisatlas.com/illinois/income/jpg/il_county_medhhinc_00.jpg"/></div>
+    </div>
+    
+    
+
+
+    <p style="margin: auto; width: 50%;"><br>Looking at the graphs above that both show non-white population and African-American population,
+      as well as the below graph showing where Superfund sites are located, there is a visible correlation between the location of superfund sites and race.
+      The more diverse locations, especially the Chicagoland area, seem to also have the greatest amount of Superfund sites, demonstrating environmental injustices.
+      Specifically, to the lower-middle an area of increased diversity seems to line up with superfund sites in both Madison and Montgomery County. Vermillion County
+      and Winnebago County also demonstrate this trend. Additionally, after looking at median income, it is clear that income is not the main reason for the given
+      trend, as even higher-income counties have quite a few superfund sites, once again visible looking at the Chicagoland area.<br>
+      While not the ultimate evidence of environmental injustice, that superfund sites exist and are not being taken care of properly in Illinois is an
+      issue not only close to home, but requiring immediate solutions. The environment may adapt, but when it comes to Superfund levels of pollution, the
+      impact is likely to include disturbance to water supplies and the local ecosystem, which can be disastrous. Ultimately, these injustices close to home
+      are something us residents of Illinois must advocate for change in, and as soon as possible.</p>
+
+
+    <iframe title="Superfund Sites by County" aria-label="Map" id="datawrapper-chart-RX9n5" src="https://datawrapper.dwcdn.net/RX9n5/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="780" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+    </script>
+
+    <p style="margin: auto; width: 50%;"><br>This website was put together by yours truly, Anish Sheth. (I'm a CS major, so it is definitely major-relevant, though I don't usually work with websites,
+      so it took some time.) For one reason or another, finding all the datasets and then putting together the code to easily manipulate the data was a real pain. You can look through the code files
+      <a href="https://github.com/anishsheth05/Illinois-EJ">here</a>, but rest assured that it took several hours to process the data and then interactively
+      plot the data. I find myself with a newfound respect of academia and anyone who works to visualize data. Either way, I choose this format because not only was it
+      major-relevant and an interesting project, but working with interactive data visualization and maps is something I have personally wanted to do for a long time.
+      This project gave me the opportunity to stretch my brain and learn how to do so. In terms of how the work I did addresses EJ, I believe that this page compiles
+      data that is generally hard to find in one place, such as the neat comparison between superfund sites, income, and the local racial composition. (I would have
+      made the median income map interactive and more up to date, but I had trouble finding data that I could translate into a map.) Additionally, I picked
+      Illinois specifically since it is something that the class has talked about, as well as because I am from here. The other reason is that interactive maps
+      of the entire United States were seriously lagging my computer and ultimately proved impossible, though I did try! Perhaps a later date. Ultimately, I
+      wanted to make clear that Illinois has its fair share of environmental and racial problems, and that fixing them is relevant to us all.</p>
   </body>
 </html>
